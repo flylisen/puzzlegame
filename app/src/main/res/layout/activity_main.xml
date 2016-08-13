@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".activity.MainActivity">
+
+    <com.lisen.android.pingtu.view.PinTuContainer
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/pintu_main_activty"
+        android:padding="3dp"
+        android:layout_centerInParent="true"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/pintu_main_activty"
+        >
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/tv_level_main_activity"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/tv_bg"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/tv_time_main_activity"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/tv_bg"
+            android:gravity="center"
+            />
+    </RelativeLayout>
+</RelativeLayout>
